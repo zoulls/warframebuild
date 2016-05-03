@@ -1,0 +1,17 @@
+# Setup
+title:        Warframe Builds
+tagline:      All awsome Warframe builds
+baseurl:      ""
+paginate:     1
+
+# About/contact
+author:
+  name:       zoulls
+  url:        http://zoulls.github.io/warframebuild/
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: redcarpet
