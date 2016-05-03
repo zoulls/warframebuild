@@ -1,7 +1,7 @@
 # Setup
 title:        Warframe Builds
 tagline:      All awsome Warframe builds
-baseurl:      ""
+baseurl:      "/warframebuild"
 paginate:     1
 
 # About/contact
