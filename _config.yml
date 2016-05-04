@@ -2,7 +2,7 @@
 title:        Warframe Builds
 tagline:      All awsome Warframe builds
 baseurl:      "/warframebuild"
-paginate:     1
+paginate:     10
 
 # About/contact
 author:
