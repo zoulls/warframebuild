@@ -3,17 +3,15 @@ layout: default
 ---
 
 {% capture tags %}
-    {% for tag in site.tags %}
-        {% for post in site.categories[page.category] %}
-            {% if post.tag == tag %}
-                {{ tag }}
-            {% endif %}
-        {% endfor %}
+    {% for post in site.categories[page.category] %}
+        {{ post.tag }}
     {% endfor %}
 {% endcapture %}
-{% assign sortedtags = tags | array_uniq %}
+{% assign sortedtags = tags | to_array_uniq %}
 
 <h2>{{ page.title }}</h2>
+<ul>
 {% for tag in sortedtags %}
-    <h4>#{{ tag }}</h4>
+    <li><a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag | capitalize }}</a></li>
 {% endfor %}
+</ul>

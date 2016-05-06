@@ -3,15 +3,20 @@ title:        Warframe Builds
 tagline:      All awsome Warframe builds
 baseurl:      "/warframebuild"
 paginate:     10
+timezone:     Europe/Paris
+exclude:      [Gemfile, Gemfile.lock]
 
 # About/contact
-author:
-  name:       zoulls
-  url:        http://zoulls.github.io/warframebuild/
+authors:
+    - name: Zoulls
+      url: https://github.com/zoulls
+    - name: Disqus
+      url: https://github.com/disqus
 
 # Gems
 gems:
   - jekyll-paginate
+  - jekyll-assets
 
 #Others
 markdown: redcarpet
