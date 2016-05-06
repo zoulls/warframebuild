@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Trinity blessing"
+title: "Synoid Simulor"
 date: 2016-05-02 15:00:00
-category: warframe
-tag: trinity
+category: weapon
+tag: synoid-simulor
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

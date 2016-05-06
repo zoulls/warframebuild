@@ -2,8 +2,8 @@
 layout: post
 title: "Mirage blind"
 date: 2016-05-03 15:00:00
-categories: ['warframe', 'mirage']
-tags: ['mirage']
+category: warframe
+tag: mirage
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
