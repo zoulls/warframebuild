@@ -1,0 +1,18 @@
+<nav id="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+    <ul class="breadcrumb">
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+
+    {% if page.category %}
+        <li><a href="{{ site.baseurl }}/{{ page.category }}">{{ page.category | capitalize }}</a></li>
+    {% else %}
+        <li><a href="{{ site.baseurl }}/{{ page.posts[0].category }}">{{ page.posts[0].category | capitalize }}</a></li>
+    {% endif %}
+
+    {% if page.tag %}
+        <li><a href="{{ site.baseurl }}/tag/{{ page.tag }}">{{ page.tag | capitalize }}</a></li>
+        {% if page.title %}
+        <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title | capitalize }}</a></li>
+        {% endif %}
+    {% endif %}
+    </ul>
+</nav>

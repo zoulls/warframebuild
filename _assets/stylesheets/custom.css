@@ -2,3 +2,77 @@
     color: #fff;
     text-decoration: none;
 }
+
+.page-header {
+    padding: 2rem 3rem;
+}
+
+.breadcrumb {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+.breadcrumb li {
+    float: left;
+}
+.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 0 3px 55px;
+    background: brown;                   /* fallback color */
+    background: hsla(206,75%,33%,1);
+    position: relative;
+    display: block;
+    float: left;
+}
+.breadcrumb li a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid hsl(206, 75%, 33%);
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+.breadcrumb li a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+.breadcrumb li:first-child a {
+    padding-left: 10px;
+}
+.breadcrumb li:nth-child(2) a       { background:        hsla(190,72%,29%,1); }
+.breadcrumb li:nth-child(2) a:after { border-left-color: hsla(190,72%,29%,1); }
+.breadcrumb li:nth-child(3) a       { background:        hsla(168,72%,29%,1); }
+.breadcrumb li:nth-child(3) a:after { border-left-color: hsla(168,72%,29%,1); }
+.breadcrumb li:nth-child(4) a       { background:        hsla(156,74%,32%,1); }
+.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(156,74%,32%,1); }
+.breadcrumb li:nth-child(5) a       { background:        hsla(156,74%,32%,1); }
+.breadcrumb li:nth-child(5) a:after { border-left-color: hsla(156,74%,32%,1); }
+
+.breadcrumb li:last-child a {
+    background: #ececec !important;
+    color: black;
+    pointer-events: none;
+    cursor: default;
+}
+
+.breadcrumb li:last-child a:after { border-left-color: #ececec; }
+.breadcrumb li a:hover { background: hsla(206,85%,25%,1); }
+.breadcrumb li a:hover:after { border-left-color: hsla(206,85%,25%,1) !important; }

@@ -25,9 +25,11 @@ markdown: redcarpet
 tag_page_layout: tag_page
 tag_page_dir: tag
 
+# Asset
 assets:
   baseurl: /warframebuild/assets
 
+# Picture
 picture:
   source: assets
   output: generated

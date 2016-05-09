@@ -9,6 +9,8 @@ layout: default
 {% endcapture %}
 {% assign sortedtags = tags | to_array_uniq %}
 
+{% include breadcrumb.html %}
+
 <h2>{{ page.title }}</h2>
 <ul>
 {% for tag in sortedtags %}

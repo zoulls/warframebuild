@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
+
+{% include breadcrumb.html %}
+
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
 {{ content }}
+
+<p class="meta">{{ page.date | date_to_string }}</p>

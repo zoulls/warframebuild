@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'jekyll-paginate'
 gem 'redcarpet'
 gem 'pygments.rb'
-gem 'jekyll-tagging'
-gem 'jekyll-picture-tag'
-gem 'jekyll-assets'
-gem 'jekyll-compose', group: [:jekyll_plugins]
+
+group :jekyll_plugins do
+  gem 'jekyll-paginate'
+  gem 'jekyll-tagging'
+  gem 'jekyll-picture-tag'
+  gem 'jekyll-assets'
+  gem 'jekyll-compose'
+end
