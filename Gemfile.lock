@@ -19,6 +19,8 @@ GEM
     jekyll-assets (0.4.1)
       jekyll
       sprockets (~> 2.9)
+    jekyll-compose (0.4.1)
+      jekyll (>= 2.5.0)
     jekyll-paginate (1.1.0)
     jekyll-picture-tag (0.3.0)
       fastimage (~> 1.6.4)
@@ -69,6 +71,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-assets
+  jekyll-compose
   jekyll-paginate
   jekyll-picture-tag
   jekyll-tagging

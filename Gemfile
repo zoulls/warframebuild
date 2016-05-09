@@ -7,3 +7,4 @@ gem 'pygments.rb'
 gem 'jekyll-tagging'
 gem 'jekyll-picture-tag'
 gem 'jekyll-assets'
+gem 'jekyll-compose', group: [:jekyll_plugins]
