@@ -78,6 +78,11 @@
 .breadcrumb li a:hover:after { border-left-color: hsla(206,85%,25%,1) !important; }
 
 @media only screen and (max-width: 35em) {
+
+    body {
+        line-height: 2;
+    }
+
     .breadcrumb li {
         display: none;
     }
