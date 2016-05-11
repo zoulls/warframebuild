@@ -4,7 +4,7 @@ tagline:      All awsome Warframe builds
 baseurl:      "/warframebuild"
 paginate:     10
 timezone:     Europe/Paris
-exclude:      [Gemfile, Gemfile.lock, rakefile.rb, README.md]
+exclude:      [Gemfile, Gemfile.lock, Rakefile, README.md]
 
 # About/contact
 authors:
