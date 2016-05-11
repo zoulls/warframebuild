@@ -6,4 +6,4 @@ category: warframe
 tag: trinity
 ---
 
-![trinity Blessing]({{ 'trinity_blessing.png' | asset_path }})
+![trinity Blessing]({{ 'trinity_blessing.jpg' | asset_path }})

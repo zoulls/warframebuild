@@ -8,4 +8,4 @@ tag: synoid-simulor
 
 The best build
 
-![Synoid Simulor]({{ 'synoid_simulor.png' | asset_path }})
+![Synoid Simulor]({{ 'synoid_simulor.jpg' | asset_path }})

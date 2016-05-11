@@ -1,18 +1,66 @@
-# Jekyll Cayman theme
+# Jekyll docker
 
-This is a [Jekyll][1] theme for [@jasonlong][2]'s [Cayman theme][4] on [GitHub Pages][3].
+```shell
+docker run --name=jekyll_sh --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll sh
+```
 
-Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
+# Jekyll command
 
-You can preview the theme at http://jasonlong.github.io/cayman-theme or with real content at http://jasonlong.github.io/geo_pattern.
 
-![](http://cl.ly/image/1T3r3d18311V/content)
+Install Gem dependencies
+```shell
+bundle install
+```
 
-# License
+Build site
+```shell
+bundle exec jekyll build
+```
 
-Jekyll Cayman theme is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) license.
+To build the site in production mode, before the build set JEKYLL_ENV variable
+```shell
+JEKYLL_ENV=production
+```
 
-[1]: http://jekyllrb.com/
-[2]: https://github.com/jasonlong
-[3]: http://pages.github.com/
-[4]: https://github.com/jasonlong/cayman-theme
+Build and launch web server
+```shell
+bundle exec jekyll serve
+```
+
+Create draft
+```shell
+bundle exec jekyll draft "draft-filename"
+```
+
+Create publish draft
+```shell
+bundle exec jekyll publish _draft/title-of-draft.md
+```
+
+Create post
+```shell
+bundle exec jekyll post "title-of-post"
+```
+
+# Structure of post
+
+```markdown
+
+---
+layout: post
+title: "Title of post"
+category: weapon or warframe
+tag: tag is the name of warframe or weapon
+---
+
+![alt attrib]({{ 'image_name.jpg' | asset_path }})
+```
+
+# Publish site
+
+ * Commit and push your changes in master branch
+ * Build the site in production mode with previous command.
+ * Switch the project to branch **gh-pages**
+ * Remove all files except **_site** folder
+ * Copy all files in _site to the root project path
+ * Commit and push with the message "Update to <*sha1 of master commit*>"

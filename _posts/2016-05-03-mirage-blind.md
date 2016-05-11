@@ -6,4 +6,4 @@ category: warframe
 tag: mirage
 ---
 
-![Mirage Blind]({{ 'mirage_blind.png' | asset_path }})
+![Mirage Blind]({{ 'mirage_blind.jpg' | asset_path }})

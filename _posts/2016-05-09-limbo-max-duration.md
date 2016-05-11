@@ -11,4 +11,4 @@ Advantages of this build:
 * Only one format
 * Maximum duration for minimal range (good for Cataclysme spell)
 
-![Limbo max duration]({{ 'limbo_duration.png' | asset_path }})
+![Limbo max duration]({{ 'limbo_duration.jpg' | asset_path }})

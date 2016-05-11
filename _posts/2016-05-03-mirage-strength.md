@@ -6,4 +6,4 @@ category: warframe
 tag: mirage
 ---
 
-![Mirage Strength]({{ 'mirage_strength.png' | asset_path }})
+![Mirage Strength]({{ 'mirage_strength.jpg' | asset_path }})
