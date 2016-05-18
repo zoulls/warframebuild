@@ -1,7 +1,20 @@
 module Tags
   class TabsBlock < Liquid::Block
+    def initialize(tag_name, menu_name, tokens)
+      super
+      @menu_name = menu_name.split(',')
+    end
+
     def render(context)
-      '<div class="tab-content">' + super + "</div>"
+      tab_id = super.scan(/div id="(.*)" class="tab-pane"/)
+      li_menu = ''
+      i = 0
+      tab_id.each do |id|
+        li_menu += '<li><a data-toggle="tab" href="#'+ id[0] +'">'+ @menu_name[i] +'</a></li>'
+        i += 1
+      end
+
+      '<ul class="nav nav-tabs">' + li_menu + '</ul><div class="tab-content">' + super + '</div>'
     end
   end
 
@@ -28,7 +41,7 @@ module Tags
       content = converter.convert(content)
       content = content.strip # Strip again to avoid "\n"
 
-      '<div id="' + @tab + '" class="tab-pane">' + content + "</div>"
+      '<div id="' + @tab + '" class="tab-pane">' + content + '</div>'
     end
   end
 end
