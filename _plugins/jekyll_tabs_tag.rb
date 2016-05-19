@@ -2,19 +2,26 @@ module Tags
   class TabsBlock < Liquid::Block
     def initialize(tag_name, menu_name, tokens)
       super
-      @menu_name = menu_name.split(',')
+      @tabs_name = menu_name.split(',')
     end
 
     def render(context)
-      tab_id = super.scan(/div id="(.*)" class="tab-pane"/)
-      li_menu = ''
+      return "" if @tabs_name.empty?
+
+      tabs_id = super.scan(/div id="(.*)" class="tab-pane"/)
+      tabs_menu = ''
       i = 0
-      tab_id.each do |id|
-        li_menu += '<li><a data-toggle="tab" href="#'+ id[0] +'">'+ @menu_name[i] +'</a></li>'
+      tabs_id.each do |id|
+        if i == 0
+          tabs_menu += '<li class="active">'
+        else
+          tabs_menu += '<li>'
+        end
+        tabs_menu += '<a data-toggle="tab" href="#'+ id[0] +'">'+ @tabs_name[i] +'</a></li>'
         i += 1
       end
 
-      '<ul class="nav nav-tabs">' + li_menu + '</ul><div class="tab-content">' + super + '</div>'
+      '<ul class="nav nav-tabs">' + tabs_menu + '</ul><div class="tab-content">' + super + '</div>'
     end
   end
 
