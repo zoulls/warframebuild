@@ -141,6 +141,34 @@
 }
 
 
+.tags-list {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+.tags-list li {
+    float: left;
+    margin: auto 1em 1em 1em;
+}
+
+.tags-list li:hover {
+    background-color: #ececec;
+    border-radius: 0.3rem;
+    transition: background-color 0.2s;
+}
+
+.tags-list li a:hover {
+    text-decoration: none;
+    color: #159957;
+    transition: color 0.2s
+}
+
+.tags-list li p {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
 /* Responsive */
 @media only screen and (max-width: 50em) {
     .breadcrumb li:last-child {
