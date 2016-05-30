@@ -12,8 +12,13 @@ layout: default
 {% include breadcrumb.html %}
 
 <h2>{{ page.title }}</h2>
-<ul>
+<ul class="tags-list">
 {% for tag in sortedtags %}
-    <li><a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag | capitalize }}</a></li>
-{% endfor %}
+    <li>
+        <a href="{{ site.baseurl }}/tag/{{ tag }}" title="{{ tag | replace: '-',' ' | capitalize }}">
+            <img src="{{ tag |  append: '_logo.png' | asset_path }}" alt="{{ tag }} logo" />
+            <p>{{ tag | replace: '-',' ' | capitalize }}</p>
+        </a>
+    </li>
+{% endfor  %}
 </ul>
