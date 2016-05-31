@@ -4,7 +4,20 @@ layout: default
 
 {% include breadcrumb.html %}
 
+{% if page.forma %}
+<div class="title-post-with-forma">
+{% else %}
+<div class="title-post">
+{% endif %}
+
 <h2>{{ page.title }}</h2>
+
+{% if page.forma %}
+    {% for i in (1..page.forma) %}
+        <img src="{{ 'forma.png' | asset_path }}" alt="forma" />
+    {% endfor %}
+{% endif %}
+</div>
 
 {{ content }}
 

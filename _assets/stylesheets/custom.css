@@ -169,10 +169,26 @@
     margin: 0.5em 0;
 }
 
+.title-post, .title-post-with-forma{
+    margin: 2em 0;
+}
+
+.title-post :first-child, .title-post-with-forma :first-child {
+    margin: 0.3em 1em 0.3em 0;
+}
+
+.title-post-with-forma :first-child {
+    float: left;
+}
+
 /* Responsive */
 @media only screen and (max-width: 50em) {
     .breadcrumb li:last-child {
         display: none;
+    }
+
+    .title-post-with-forma :first-child {
+        float: none;
     }
 }
 
