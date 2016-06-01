@@ -3,6 +3,7 @@ layout: post
 title: "Limbo max duration"
 category: warframe
 tag: limbo
+forma: 1
 ---
 
 Advantages of this build:

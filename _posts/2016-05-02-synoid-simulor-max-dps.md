@@ -3,6 +3,7 @@ layout: post
 title: "Synoid simulor max DPS"
 category: weapon
 tag: synoid-simulor
+forma: 2
 ---
 
 The best build

@@ -3,6 +3,7 @@ layout: post
 title: "Synoid gammacor DPS edition"
 category: weapon
 tag: synoid-gammacor
+forma: 5
 ---
 
 {% tabs Anti Grinner,Anti Corpus/Infested,Anti Corrupted %}
